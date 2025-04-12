@@ -5,7 +5,7 @@ from tensorflow.keras.models import load_model
 from PIL import Image
 import numpy as np
 import io
-from utils import preprocess_image, CLASS_NAMES
+from app.utils import preprocess_image, CLASS_NAMES
 
 app = FastAPI()
 model = load_model("model/model_fruit.h5")
